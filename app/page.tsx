@@ -48,8 +48,8 @@ export default function Component() {
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {apps.map((app, index) => (
-            <Card key={index}>
-              <CardHeader className="p-0">
+            <Card key={index} className="flex flex-col">
+              <CardHeader className="p-0 flex-grow-0">
                 <div className="w-full mb-4">
                   <Image
                     src={app.image}
@@ -64,7 +64,7 @@ export default function Component() {
                   <CardDescription>{app.description}</CardDescription>
                 </div>
               </CardHeader>
-              <CardFooter className="px-6 pb-4">
+              <CardFooter className="px-6 pb-4 mt-auto">
                 <Button asChild className="w-full">
                   <Link href={app.link}>Go to App</Link>
                 </Button>
