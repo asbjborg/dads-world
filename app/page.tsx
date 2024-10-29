@@ -9,13 +9,13 @@ export default function Component() {
     {
       name: "Quiz",
       description: "Test your knowledge with interactive quizzes.",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/images/quiz.jpeg",
       link: "/quiz"
     },
     {
       name: "Draw with AI",
       description: "Create unique artwork with AI-powered drawing tools.",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/images/draw-with-ai.jpeg",
       link: "/draw"
     }
   ]
